@@ -9,22 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
+
     <title>Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="svg/Favicon_96x96.svg" />
   </head>
   <body>
     <header>
       <div id="top"></div>
-      <a href="index.html" aria-label="Index">
+      <a href="index.html" aria-label="Forside">
         <svg
           class="logo-svg"
           data-name="Layer 1"
@@ -38,11 +33,11 @@
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="index.html">Projekter</a></li>
+          <li><a href="#project" class="button">Projekter</a></li>
           <li><a href="om.html">Om</a></li>
           <li><a href="mailto:cahe0002@stud.ek.dk">Kontakt</a></li>
         </ul>
-        <button class="burger">
+        <button class="burger" aria-label="Åbn menu">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
@@ -51,26 +46,29 @@
     </header>
     <main>
       <section class="hero">
-        <img src="img/index_hero.webp" alt="" />
+        <img src="img/index_hero.webp" alt="hero_billede" />
         <h1>Multimediedesigner</h1>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="37"
-          height="21"
-          viewBox="0 0 37 21"
-          fill="none"
-        >
-          <path
-            d="M18.9143 17.5002L17.5001 18.9144L-0.000151038 1.41421L1.41406 0L18.9143 17.5002Z"
-            fill="#F5F5F5"
-          />
-          <path
-            d="M36.4143 2.82823L35.0001 1.41401L17.4998 18.9142L18.9141 20.3284L36.4143 2.82823Z"
-            fill="#F5F5F5"
-          />
-        </svg>
+        <a href="#down" aria-label="Scroll ned til indhold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="37"
+            height="21"
+            viewBox="0 0 37 21"
+            fill="none"
+          >
+            <path
+              d="M18.9143 17.5002L17.5001 18.9144L-0.000151038 1.41421L1.41406 0L18.9143 17.5002Z"
+              fill="#F5F5F5"
+            />
+            <path
+              d="M36.4143 2.82823L35.0001 1.41401L17.4998 18.9142L18.9141 20.3284L36.4143 2.82823Z"
+              fill="#F5F5F5"
+            />
+          </svg>
+        </a>
       </section>
-      <section class="grid_1-1">
+      <div id="down" aria-label="Scroll ned"></div>
+      <section class="grid_1-1" id="project">
         <img
           src="img/Iphone_mobile_tema2.webp"
           alt="mobiletema2"
@@ -123,13 +121,11 @@
             eksisterende website. Vi brugte værktøjer som Adobe Illustrator, CSS
             og JavaScript.
           </p>
-          <a href="tema4.html">
-            <div class="button-read">Læs mere</div>
-          </a>
+          <a href="tema4.html" class="button-read">Læs mere</a>
         </div>
       </section>
       <section class="grid_1-1">
-        <img src="img/Chiba_mobile.webp" alt="" class="mobile" />
+        <img src="img/Chiba_mobile.webp" alt="Chiba_mobile" class="mobile" />
         <div class="tema">
           <h2>
             Tema 5 <br />
@@ -145,7 +141,7 @@
           </a>
         </div>
       </section>
-      <a href="#top" class="arrow-up">
+      <a href="#top" class="arrow-up" aria-label="Scroll til toppen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="37"
@@ -174,7 +170,11 @@
         viewBox="0 0 119 48"
         fill="none"
       >
-        <a href="https://www.instagram.com/carolineschytte/" target="_blank">
+        <a
+          href="https://www.instagram.com/carolineschytte/"
+          target="_blank"
+          aria-label="Besøg min instagram her"
+        >
           <path
             d="M13.8316 0C6.20431 0 0 6.21006 0 13.8393V33.6043C0 41.2316 6.21006 47.4359 13.8393 47.4359H33.6043C41.2316 47.4359 47.4359 41.2258 47.4359 33.5966V13.8316C47.4359 6.20431 41.2258 0 33.5966 0H13.8316ZM37.5534 7.90598C38.6444 7.90598 39.5299 8.79145 39.5299 9.88248C39.5299 10.9735 38.6444 11.859 37.5534 11.859C36.4624 11.859 35.5769 10.9735 35.5769 9.88248C35.5769 8.79145 36.4624 7.90598 37.5534 7.90598ZM23.7179 11.859C30.2582 11.859 35.5769 17.1777 35.5769 23.7179C35.5769 30.2582 30.2582 35.5769 23.7179 35.5769C17.1777 35.5769 11.859 30.2582 11.859 23.7179C11.859 17.1777 17.1777 11.859 23.7179 11.859ZM23.7179 15.812C21.6212 15.812 19.6102 16.6449 18.1276 18.1276C16.6449 19.6102 15.812 21.6212 15.812 23.7179C15.812 25.8147 16.6449 27.8257 18.1276 29.3083C19.6102 30.791 21.6212 31.6239 23.7179 31.6239C25.8147 31.6239 27.8257 30.791 29.3083 29.3083C30.791 27.8257 31.6239 25.8147 31.6239 23.7179C31.6239 21.6212 30.791 19.6102 29.3083 18.1276C27.8257 16.6449 25.8147 15.812 23.7179 15.812Z"
             fill="#FFD685"
@@ -183,6 +183,7 @@
         <a
           href="https://www.linkedin.com/in/caroline-schytte-69241b165/"
           target="_blank"
+          aria-label="Besøg min Linkedin profil"
         >
           <path
             d="M114.136 0H74.8636C72.4527 0 70.5 1.95273 70.5 4.36364V43.6364C70.5 46.0473 72.4527 48 74.8636 48H114.136C116.547 48 118.5 46.0473 118.5 43.6364V4.36364C118.5 1.95273 116.547 0 114.136 0ZM85.6724 39.2727H79.236V18.5629H85.6724V39.2727ZM82.3887 15.6022C80.3138 15.6022 78.636 13.92 78.636 11.8495C78.636 9.77891 80.316 8.09891 82.3887 8.09891C84.4571 8.09891 86.1393 9.78109 86.1393 11.8495C86.1393 13.92 84.4571 15.6022 82.3887 15.6022ZM109.781 39.2727H103.349V29.2015C103.349 26.7993 103.306 23.7098 100.005 23.7098C96.6556 23.7098 96.1407 26.3258 96.1407 29.0269V39.2727H89.7087V18.5629H95.8833V21.3927H95.9705C96.8302 19.7651 98.9291 18.048 102.06 18.048C108.577 18.048 109.781 22.3375 109.781 27.9142V39.2727Z"
@@ -191,7 +192,7 @@
         </a>
       </svg>
       <hr class="stroke" />
-      <p id="copyright">2026 Caroline Schytte. All Rights Reserved.</p>
+      <p id="copyright">©2026 Caroline Schytte. All Rights Reserved.</p>
     </footer>
     <script src="js/burgermenu.js"></script>
   </body>
