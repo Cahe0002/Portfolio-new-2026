@@ -1,11 +1,11 @@
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 150px;
+  gap: 50px;
   align-items: center;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-bottom: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .grid_1-1:nth-of-type(even) {
