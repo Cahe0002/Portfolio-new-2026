@@ -9,17 +9,17 @@
 }
 
 .grid_1-1:nth-of-type(even) {
+  /* Vælger lige-nummerede elementer med class grid_1-1 (2, 4, 6 osv. */
   direction: rtl;
 }
 
 .grid_1-1:nth-of-type(even) > * {
-  direction: ltr;
+  direction: ltr; /* (even) (lige tal) > (direkte child) * (alle elementer) */
 }
 
 .grid-1-1-svg {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
   max-width: 1200px;
   margin: 200px auto;
